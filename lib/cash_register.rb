@@ -3,7 +3,6 @@ class CashRegister
   
   def initialize(no_discount = 0)
     @total = 0
-    puts discount
   end
   
   def discount
@@ -15,5 +14,6 @@ class CashRegister
   end
   
   def apply_discount
+    @total * (discount / 100)
   end
 end
