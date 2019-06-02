@@ -17,7 +17,6 @@ class CashRegister
   end
   
   def apply_discount
-    binding.pry
     @total -= ((discount.to_f/ 100) * @total)
     return "After the discount, the total comes to $#{@total.to_i}."
   end
